@@ -52,7 +52,7 @@
     define('DB_ENGINE' ,   'mysql');
     define('DB_HOST'   ,   'localhost');
     define('DB_NAME'   ,   '64.225.53.166');
-    define('DB_USER'   ,   'user');
+    define('DB_USER'   ,   'root');
     define('DB_PASS'   ,   'lobitogeiner24');
     define('DB_CHARSET',   'utf8');
 
