@@ -18,6 +18,9 @@
             $inicio = ($_GET['pagina'] -1)*$articulos_x_pagina;
             $datos = $producto->detail_productos_paginate($inicio, $articulos_x_pagina);
         endif;
+	$categoria = new categoriaModel();
+        $categorias =  $categoria->all();
+        $num = 0;
     else :
         if(isset($_GET['prod'])) {
             $datos_get = explode('-',$_GET['prod']);
