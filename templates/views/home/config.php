@@ -1,7 +1,7 @@
 <?php
     if(!$_GET)  header('Location: http://64.225.53.166/?pagina=1');
     if(isset($_GET['pagina'])) :
-        echo INCLUDES;
+        echo MODELS;
 	die();
     else :
         if(isset($_GET['prod'])) {
