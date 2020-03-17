@@ -6,13 +6,13 @@
 
     define('LANG','es');                                                            /* Language */
 
-    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '/');
+    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '__EL BASEPATH EN PRODUCCIÓN__');
 
     define('AUTH_SALT', 'NuamiFramework<3');                                        /* Sal del Sistema */
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/Minnsa-Shoes/' : '64.225.53.166/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/Minnsa-Shoes/' : '__URL EN PRODUCCIÓN_');
 
     // rutas de directorios y archivos =>
 
@@ -50,11 +50,11 @@
 
     // credenciales base de datos   =>  producción
     define('DB_ENGINE' ,   'mysql');
-    define('DB_HOST'   ,   '64.225.53.166');
-    define('DB_NAME'   ,   'zapateria');
-    define('DB_USER'   ,   'root');
-    define('DB_PASS'   ,   'lobitogeiner24');
-    define('DB_CHARSET',   'utf8');
+    define('DB_HOST'   ,   'localhost');
+    define('DB_NAME'   ,   '__REMOTE DB__');
+    define('DB_USER'   ,   '__REMOTE DB__');
+    define('DB_PASS'   ,   '__REMOTE DB__');
+    define('DB_CHARSET',   '__REMOTE CHARTSET__');
 
     /**
      * Controlador Defecto
