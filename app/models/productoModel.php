@@ -217,7 +217,6 @@ class productoModel extends Model
     public function detail_productos(){
         $sql = 'SELECT color.name, dt.id, dt.stock, dt.link_photo, p.code , p.price , dt.id_producto FROM detalle_producto as dt INNER JOIN color ON dt.id_color = color.id
                 INNER JOIN producto as p ON p.id = dt.id_producto 
-                GROUP BY dt.id_producto
                 ORDER BY dt.id DESC';
         try{
             return ($rows = parent::query($sql)) ? $rows : false;
@@ -248,7 +247,7 @@ class productoModel extends Model
         $sql = 'SELECT color.name, dt.id, dt.stock, dt.link_photo, p.code , p.price , dt.id_producto FROM detalle_producto as dt INNER JOIN color ON dt.id_color = color.id
                 INNER JOIN producto as p ON p.id = dt.id_producto 
                 WHERE dt.stock > 0
-                GROUP BY dt.id_producto ORDER BY dt.id DESC LIMIT '.$inicio.', '.$nproductos;
+                 ORDER BY dt.id DESC LIMIT '.$inicio.', '.$nproductos;
         try{
             return ($rows = parent::query($sql)) ? $rows : false;
         } catch(Exception $e) {
@@ -261,7 +260,7 @@ class productoModel extends Model
                 INNER JOIN producto as p ON p.id = dt.id_producto 
                 INNER JOIN producto_subcategoria as ps ON p.id = ps.id_producto 
                 WHERE ps.id_subcategoria=:id
-                GROUP BY dt.id_producto ORDER BY dt.id DESC LIMIT '.$inicio.', '.$nproductos;
+                ORDER BY dt.id DESC LIMIT '.$inicio.', '.$nproductos;
         try{
             return ($rows = parent::query($sql, ['id' => $id])) ? $rows : false;
         } catch(Exception $e) {
