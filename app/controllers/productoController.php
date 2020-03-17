@@ -15,12 +15,6 @@
 
                 View::render('index', $data);
         }
-        
-        public function detalle_prodC(){
-            $producto = new productoModel();
-            return $producto->detail_productos();
-        }
-
         /**
          * detalle de un Producto
          * @return $data
