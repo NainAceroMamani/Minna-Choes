@@ -1,7 +1,6 @@
 <?php
     if(!$_GET)  header('Location: http://64.225.53.166/?pagina=1');
     if(isset($_GET['pagina'])) :
-	require_once MODELS.'productoModel.php';
         $producto = new productoModel();
         $data =  $producto->detail_productos();
 
