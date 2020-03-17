@@ -6,7 +6,7 @@
 
     define('LANG','es');                                                            /* Language */
 
-    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '64.225.53.166/');
+    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '/');
 
     define('AUTH_SALT', 'NuamiFramework<3');                                        /* Sal del Sistema */
 
@@ -50,7 +50,7 @@
 
     // credenciales base de datos   =>  producción
     define('DB_ENGINE' ,   'mysql');
-    define('DB_HOST'   ,   '127.0.0.1');
+    define('DB_HOST'   ,   '64.225.53.166');
     define('DB_NAME'   ,   'zapateria');
     define('DB_USER'   ,   'root');
     define('DB_PASS'   ,   'lobitogeiner24');
