@@ -10,7 +10,7 @@ class categoriaModel extends Model
      * @return void
      */
     public function all(){
-        $sql = 'SELECT * FROM categoria ORDER BY id DESC';
+        $sql = 'SELECT * FROM categoria';
         try{
             return ($rows = parent::query($sql)) ? $rows : false;
         } catch(Exception $e) {
