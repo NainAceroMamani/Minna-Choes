@@ -51,10 +51,10 @@
     // credenciales base de datos   =>  producción
     define('DB_ENGINE' ,   'mysql');
     define('DB_HOST'   ,   'localhost');
-    define('DB_NAME'   ,   '__REMOTE DB__');
-    define('DB_USER'   ,   '__REMOTE DB__');
-    define('DB_PASS'   ,   '__REMOTE DB__');
-    define('DB_CHARSET',   '__REMOTE CHARTSET__');
+    define('DB_NAME'   ,   '64.225.53.166');
+    define('DB_USER'   ,   'user');
+    define('DB_PASS'   ,   'lobitogeiner24');
+    define('DB_CHARSET',   'utf8');
 
     /**
      * Controlador Defecto
