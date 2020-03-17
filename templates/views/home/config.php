@@ -1,9 +1,8 @@
 <?php
     if(!$_GET)  header('Location: http://64.225.53.166/?pagina=1');
     if(isset($_GET['pagina'])) :
-        $producto = new productoModel();
-        $data =  $producto->detail_productos();
-
+        echo INCLUDES;
+	die();
     else :
         if(isset($_GET['prod'])) {
             $datos_get = explode('-',$_GET['prod']);
