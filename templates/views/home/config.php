@@ -1,12 +1,12 @@
 <?php
     if(!$_GET)  header('Location: http://64.225.53.166/?pagina=1');
     if(isset($_GET['pagina'])) :
-        $archivos_incluidos = get_included_files();
+        producto = new productoController();
+        $data =  $producto->detalle_prodC();
 
-	foreach ($archivos_incluidos as $nombre_archivo) {
-	    echo "$nombre_archivo\n<br>";
-	}
-	die();
+        $articulos_x_pagina = 9;
+        $total = sizeof($data);
+        $paginas = ceil($total/$articulos_x_pagina);
     else :
         if(isset($_GET['prod'])) {
             $datos_get = explode('-',$_GET['prod']);
