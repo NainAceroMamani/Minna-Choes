@@ -16,10 +16,5 @@
             ];
             View::render('Nuami', $data);
         }
-        
-        public function cargarDatos() {
-            $producto = new productoModel();
-            return $producto->detail_productos();
-        }
 
     }
