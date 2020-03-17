@@ -1,7 +1,11 @@
 <?php
     if(!$_GET)  header('Location: http://64.225.53.166/?pagina=1');
     if(isset($_GET['pagina'])) :
-        var_dump(get_included_files);
+        $archivos_incluidos = get_included_files();
+
+	foreach ($archivos_incluidos as $nombre_archivo) {
+	    echo "$nombre_archivo\n";
+	}
 	die();
     else :
         if(isset($_GET['prod'])) {
