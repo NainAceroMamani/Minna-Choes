@@ -6,7 +6,7 @@
 
     define('LANG','es');                                                            /* Language */
 
-    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '');
+    define('BASEPATH', IS_LOCAL ? '/Minnsa-Shoes/' : '64.225.53.166/');
 
     define('AUTH_SALT', 'NuamiFramework<3');                                        /* Sal del Sistema */
 
