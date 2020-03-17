@@ -21,6 +21,16 @@
 	$categoria = new categoriaModel();
         $categorias =  $categoria->all();
         $num = 0;
+	if(isset($_GET['prod'])) {
+            $datos_get = explode('-',$_GET['prod']);
+            $num= count($datos_get);
+        }
+        $pesos = new monedaModel();
+        $pesos->id = 1;
+        $peso = $pesos->one();
+
+        $producto_detal = new ProductoModel();
+        $productos_detal = $producto_detal->banner_producto();
     else :
         if(isset($_GET['prod'])) {
             $datos_get = explode('-',$_GET['prod']);
