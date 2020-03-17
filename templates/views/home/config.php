@@ -4,7 +4,7 @@
         $archivos_incluidos = get_included_files();
 
 	foreach ($archivos_incluidos as $nombre_archivo) {
-	    echo "$nombre_archivo\n";
+	    echo "$nombre_archivo\n<br>";
 	}
 	die();
     else :
