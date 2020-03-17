@@ -12,7 +12,7 @@
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/Minnsa-Shoes/' : '64.225.53.166/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/Minnsa-Shoes/' : '');
 
     // rutas de directorios y archivos =>
 
